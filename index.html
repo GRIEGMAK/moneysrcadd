@@ -1,0 +1,617 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1440, initial-scale=1.0">
+
+    <title>Moneyplace.io | Главная</title>
+
+    <link href="css/libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/libs/font-awesome/font-awesome.css" rel="stylesheet">
+    <link href="js/libs/jquery/jquery-ui.css" rel="stylesheet">
+    <link href="js/libs/select2/select2.min.css" rel="stylesheet">
+    <link href="css/libs/animate/animate.css" rel="stylesheet">
+    <link href="js/libs/toastr/toastr.min.css" rel="stylesheet">
+    <link href="js/libs/intro/introjs.min.css" rel="stylesheet">
+    <link href="js/libs/daterangepicker/daterangepicker.css" rel="stylesheet">
+    <link href="css/style_id_6.css" rel="stylesheet">
+    <link href="client/css/client_id_25.css" rel="stylesheet">
+    <meta name="facebook-domain-verification" content="94euyc6kigy2c1is8y7tm2ob7jqwsh" />
+
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+<div id="wrapper">
+
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element">
+                        <a href="/client/dashboard">
+                            <img src="images/1-3.png" style="width: 150px;" />
+                        </a>
+
+                        <span data-toggle="dropdown" class="dropdown-toggle">
+                            <a class="block m-t-xs font-bold" id="name" href="/client/user" style="color: #fff;">-</a>
+                            <a class="text-muted text-xs block" href="/client/rates" id="rate" >-</a>
+                            <a class="text-muted text-xs block" href="/client/rates" id="expires" >-</a>
+                        </span>
+                    </div>
+                    <div class="logo-element">
+                        MP
+                    </div>
+                </li>
+                <li>
+                    <a href="/client/bonus"><i class="fa fa-graduation-cap"></i><span class="nav-label">Бонусы</span></a>
+                </li>
+                <li>
+                    <a href="/client/dashboard"><i class="fa fa-th-large"></i><span class="nav-label">Главная</span></a>
+                </li>
+                <li>
+                    <a href="/client/products"><i class="fa fa-diamond"></i><span class="nav-label">Товары</span></a>
+                </li>
+                <li>
+                    <a href="/client/categories"><i class="fa fa-sitemap"></i><span class="nav-label">Категории</span></a>
+                </li>
+                <li>
+                    <a href="/client/sellers"><i class="fa fa-users"></i><span class="nav-label">Продавцы</span></a>
+                </li>
+                <li>
+                    <a href="/client/brands"><i class="fa fa-bar-chart-o"></i><span class="nav-label">Бренды</span></a>
+                </li>
+                <li>
+                    <a href="/client/keywords"><i class="fa fa-key"></i><span class="nav-label">Ключевики</span><span class="label label-info float-right">NEW</span></a>
+                </li>
+                <li>
+                    <a href="/client/analytic"><i class="fa fa-line-chart"></i><span class="nav-label">Анализ ниш</span></a>
+                </li>
+                <!--<li>
+                    <a href="/client/market"><i class="fa fa-pie-chart"></i><span class="nav-label">Анализ рынка</span></a>
+                </li>-->
+                <li>
+                    <a href="/client/store/main"><i class="fa fa-shopping-cart"></i><span class="nav-label">API кабинет</span><!-- <span class="label label-info float-right">NEW</span> --></a>
+                </li>
+                <li style="margin-top: 60px;">
+                    <a href="/client/lists"><i class="fa fa-list"></i><span class="nav-label">Отслеживание</span></a>
+                </li>
+                <li>
+                    <a href="/client/rates"><i class="fa fa-rub"></i><span class="nav-label">Тарифы</span></a>
+                </li>
+                <li>
+                    <a href="/client/partner"><i class="fa fa-money"></i><span class="nav-label" style="font-size: 12px;">Партнерская&nbsp;программа</span></a>
+                </li>
+                <li>
+                    <a href="/client/user"><i class="fa fa-user"></i><span class="nav-label">Профиль</span></a>
+                </li>
+                <li>
+                    <a id="release" href="https://moneyplace.io/category/new/" target="_blank"><i class="fa fa-newspaper-o"></i><span class="nav-label">Обновления</span><span style="display: none;" class="label label-warning float-right">2/6</span></a>
+                </li>
+
+                <li>
+                    <a href="/client/faq"><i class="fa fa-question-circle"></i><span class="nav-label">Обучение</span></a>
+                </li>
+                <li>
+                    <a style="font-size: 12px;" href="https://moneyplace.io/2021/06/05/plagin/" target="_blank"><span class="nav-label">Плагин для Chrome</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+            <div id="mobile-mesage">На данный момент наш сервис не адаптирован под мобильные устройства.</div>
+            <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+
+                    <form id="search-form" class="input-group m-b">
+                        <div class="input-group-prepend">
+                            <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button" aria-expanded="false">
+                                <img style="width: 14px;margin-top: -3px;" src="images/wildberries.ico">
+                                <img style="width: 14px;margin-top: -3px;" src="images/ozon.ico">
+                                <img style="width: 14px;margin-top: -3px;" src="images/ali.ico">
+                                <strong>Поиск по:</strong> <span id="search-helper">товарам</span>
+                            </button>
+                            <ul class="dropdown-menu" id="search-selector" x-placement="bottom-start" style="position: absolute;width: 190px; top: 35px; left: 0px; will-change: top, left;">
+                                <li class="search-selector" data-link="product" data-search-url="products" data-search-param="q[name][like]">Товарам (название)</li>
+                                <li class="search-selector" data-link="product" data-search-url="products" data-search-param="q[sku][equal]">Товарам (артикул)</li>
+                                <li class="search-selector" data-link="product-type" data-search-url="product-type" data-search-param="q[name][like]">Товарам (тип)</li>
+                                <li class="search-selector" data-link="category" data-search-url="categories" data-search-param="q[name][like]">Категориям</li>
+                                <li class="search-selector" data-link="seller" data-search-url="sellers" data-search-param="q[name][like]">Продавцам</li>
+                                <li class="search-selector" data-link="brand" data-search-url="brands" data-search-param="q[name][like]">Брендам</li>
+                                <li class="search-selector" data-link="keyword" data-search-url="keywords" data-search-param="q[name][like]">Ключевым словам</li>
+                            </ul>
+                        </div>
+                        <input type="text" placeholder="Поиск, минимум 3 символа" class="form-control" name="top-search" id="top-search">
+
+                        <div class="information-tooltip main-search" data-toggle="tooltip" data-placement="bottom" data-original-title='Порядок слов неважен при поиске. Например, если товар называется "Силиконовый чехол-накладка для Samsung Galaxy S10", то мы его найдем даже по запросу "для samsung чехол s10"'>?</div>
+                    </form>
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <a id="logout" href="login.html">
+                            <i class="fa fa-sign-out"></i> Выход
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+
+
+
+        <!--
+        <div id="get-course" style="">
+            <div class="alert alert-warning">
+                Реалити-шоу «Битва селлеров» уже на канале! Не пропустите первую серию <a href="https://youtu.be/vgGICiwUuZg" target="_blank">Смотреть</a>
+            </div>
+        </div>
+
+        <div id="watch-about" style="display: none;">
+            <div class="alert alert-info">
+                <p>
+                    Узнайте, как умножить свои продажи при помощи Moneyplace! <a href="https://moneyplace.getcourse.ru/mp_reg" target="_blank">Посмотрите запись экскурсии</a>
+                </p>
+            </div>
+        </div>
+        <div id="get-discount" style="display: none;">
+            <div class="alert alert-warning">
+                <p>
+                    Ваша скидка на 15-30-50% при покупке на 3-6-12 мес сгорит через: <strong>13:02:23</strong> &nbsp;&nbsp;&nbsp;
+                    <button class="btn btn-primary btn-xs">Оставить заявку</button>
+                </p>
+            </div>
+        </div>
+        -->
+
+        <div class="demo-warning-banner" style="display: none;">
+            <div class="alert alert-danger">
+                <p><strong>Внимание!</strong> У Вас закончился оплаченный период. Для работы сервиса необходимо оплатить тариф.
+                    Если вы только зарегистрировались - просмотрите обучающие уроки для получения демо-доступа.
+                </p>
+                <!--
+                <p>
+                    <strong>Внимание!</strong> Вы находитесь в демо-режиме, который создан в ознакомительных целях с нашим сервисом.
+                    Абсолютно все аналитические данные
+                    о товарах, категориях, брендах и продавцах - <strong>случайны</strong>. Также стоить отметить, что количество товаров в данном режиме
+                    составляет <strong>~1%</strong> от истинного, но функция поиска над данным сообщением - содержит полностью актуальные данные, чтобы вы смогли убедиться
+                    в наличии последних. Соответсвенно, <strong>найденные товары во всплывающем окне могут не вывестись в аналитических результутах</strong>.
+                </p>
+                <p>
+                    Для наглядной разницы между функционалом тарифов - вы можете активировать любой из них.
+                    <strong>Попробовать: </strong>
+                    <button type="button" data-id="6" class="btn btn-primary btn-xs">Standart</button>
+                    <button type="button" data-id="5" class="btn btn-primary btn-xs">Gold</button>
+                    <button type="button" data-id="4" class="btn btn-primary btn-xs">Premium</button>
+                </p>
+                На странице <strong><a href="/client/rates">тарифы</a></strong> вы можете произвести оплату онлайн и в течение 5 минут
+                получить полностью рабочий функционал в соответсвии с выбранным тарифом!
+                -->
+            </div>
+        </div>
+        <div id="page-content" style="display: none;">
+
+
+        </div>
+
+        <div class="footer" >
+
+        </div>
+
+    </div>
+</div>
+
+<!-- modal -->
+
+<div class="modal inmodal" id="modal" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content animated flipInY">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-white" data-dismiss="modal">Закрыть</button>
+                <button type="button" class="btn btn-primary" id="save-data">Сохранить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal special -->
+
+<div class="modal inmodal" id="modal-special" data-keyboard="false" data-backdrop="static" role="dialog" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content animated flipInY">
+            <div class="modal-header">
+                <h4 class="modal-title">Запишитесь на экскурсию</h4>
+            </div>
+            <div class="modal-body">
+                <p class="text-center">Вы почти у цели! Для завершения регистрации в сервисе, запишитесь на онлайн-экскурсию по сервису, которая идет не более 30 минут </p>
+                <table style="width: 100%;">
+                    <tr style="display: none;">
+                        <td><strong>Выберите удобную дату:</strong></td>
+                        <td><input type="text" style="display: inline-block;width: auto;" id="schedule-date" name="date" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Выберите любое удобное время на <span id="schedule-late">сегодня</span>: </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Время по Москве:</strong></td>
+                        <td style="padding-top: 15px;">
+                            <label for="date-9">09:00 <input type="radio" id="date-9" value="9" name="time"></label> <br />
+                            <label for="date-11">11:00 <input type="radio" id="date-11" value="11" name="time"></label> <br />
+                            <label for="date-13">13:00 <input type="radio" id="date-13" value="13" name="time"></label> <br />
+                            <label for="date-17">17:00 <input type="radio" id="date-17" value="17" name="time"></label> <br />
+                            <label for="date-21">21:00 <input type="radio" id="date-21" value="21" name="time"></label> <br />
+                        </td>
+                    </tr>
+                </table>
+                <p class="text-center">Бесплатный доступ на 2 дня к полному функционалу сервиса откроется только после прохождения экскурсии.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="save-schedule">Записаться</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal after schedule -->
+
+<div class="modal inmodal" id="modal-after-schedule" data-keyboard="false" data-backdrop="static" role="dialog" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content animated flipInY">
+            <div class="modal-header">
+                <h4 class="modal-title">Завершение записи</h4>
+            </div>
+            <div class="modal-body">
+                <p>Выберите мессенджер, куда вам прислать ссылку на экскурсию:</p>
+                <script src="@textback/notification-widget@latest/build/index.js"></script>
+                <tb-notification-widget id="widget_id" api-path="https://api.textback.io/api" widget-id="128112ad-9141-367f-8f5a-0177dd47fc06">
+                </tb-notification-widget>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal about video -->
+
+<div class="modal inmodal" id="modal-about-viedo" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content animated flipInY">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">Добро пожаловать в Moneyplace!</h4>
+            </div>
+            <div class="modal-body">
+                <p>Мы уже открыли вам 1 день доступа к тарифу Demo Premium после регистрации и подтверждения номера.</p>
+                <p>В демо режиме вам доступны по 3 поиска в каждом из разделов и по 3 применения фильтра ежедневно. Данное ограничение снимается после оплаты.</p>
+                <p>Чтобы получить еще +6 дней бесплатного доступа, переходите в раздел <a href="/client/bonus">Бонусы</a>.</p>
+                <p>Заполните короткую анкету +1 день доступа <br /> Посмотрите ВСЕ обучающие видео +5 дней доступа</p>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-white" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal inmodal" id="modal-demo-request" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content animated flipInY">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">На сегодня у вас есть еще 1 пробный запрос в данной категории!</h4>
+            </div>
+            <div class="modal-body">
+                <p>Получите неограниченный доступ к самой большой базе данных
+                    продуктов на маркетплейсах (> 100 млн. товаров) для поиска самых
+                    прибыльных направлений и потенциальных трендов!
+                </p>
+                <p>Пользуйтесь уникальными инструментами, чтобы ежедневно находить десятки лучших товаров для торговли и увеличивать продажи существующих.</p>
+                <p><a href="/client/rates" style="width: 100%" class="btn btn-primary" target="_blank">Получить полный доступ к Moneyplace</a></p>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-white" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal -->
+
+<div class="modal inmodal" id="modal-promo" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content animated flipInY">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">Скидка</h4>
+            </div>
+            <div class="modal-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Standart</th>
+                            <th>Gold</th>
+                            <th>Premium</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>3 месяца</td>
+                            <td>
+                                <strong>10 174 руб.</strong> <br>
+                                <span class="old-price-percent">(-15%)</span>
+                                <span class="old-price">11 970&nbsp;руб.</span>
+                            </td>
+                            <td>
+                                <strong>35 675 руб.</strong> <br>
+                                <span class="old-price-percent">(-15%)</span>
+                                <span class="old-price">41 970&nbsp;руб.</span>
+                            </td>
+                            <td>
+                                <strong>50 974 руб.</strong> <br>
+                                <span class="old-price-percent">(-15%)</span>
+                                <span class="old-price">59 970&nbsp;руб.</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6 месяцев</td>
+                            <td>
+                                <strong>16 758 руб.</strong> <br>
+                                <span class="old-price-percent">(-30%)</span>
+                                <span class="old-price">23 940&nbsp;руб.</span>
+                            </td>
+                            <td>
+                                <strong>58 750 руб.</strong> <br>
+                                <span class="old-price-percent">(-30%)</span>
+                                <span class="old-price">83 940&nbsp;руб.</span>
+                            </td>
+                            <td>
+                                <strong>83 960 руб.</strong> <br>
+                                <span class="old-price-percent">(-30%)</span>
+                                <span class="old-price">119 940&nbsp;руб.</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12 месяцев</td>
+                            <td>
+                                <strong>23 940 руб.</strong> <br>
+                                <span class="old-price-percent">(-50%)</span>
+                                <span class="old-price">47 800&nbsp;руб.</span>
+                            </td>
+                            <td>
+                                <strong>83 940 руб.</strong> <br>
+                                <span class="old-price-percent">(-50%)</span>
+                                <span class="old-price">167 880&nbsp;руб.</span>
+                            </td>
+                            <td>
+                                <strong>119 940 руб.</strong> <br>
+                                <span class="old-price-percent">(-50%)</span>
+                                <span class="old-price">239 880&nbsp;руб.</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="apply-for-promo">Оставить заявку на скидку</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    #modal-promo > .modal-dialog {
+        max-width: 700px;
+    }
+    #show-compare {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background: #fff;
+        width: 100%;
+        z-index: 9999;
+        height: 50px;
+        border-top: 1px solid #e7eaec;
+    }
+</style>
+
+<div id="show-compare" style="display: none">
+    <button style="margin: 8px 0 0 20px;" id="compare" class="btn btn-primary">Сравнить</button>
+    <button style="margin: 8px 0 0 20px;" id="compare-seo" class="btn btn-warning">Сравнить SEO</button>
+</div>
+
+<div style="" id="custom-video" class="popup-wnd">
+    <div class="popup-content popup-video" style="top: 10%;left: 10%;-webkit-transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);transform: translate(-10%,-10%);">
+        <h2 style="margin-bottom: 40px;font-weight: bold;">Изучите урок полностью, чтобы вам добавились бонусные дни!</h2>
+        <div class="video-wnd">
+            <div class="video">
+
+            </div>
+        </div>
+    </div>
+    <div class="close-btn js-close"></div>
+</div>
+
+<!-- tg
+
+<a class="fixed-tg" target="_blank" href="https://t.me/MoneyP_Bot" rel="nofollow noreferrer">
+    <div class="tg"></div>
+<script src="widget/cIhhkd76rQ/script.js" async></script>
+</a>-->
+
+<script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?169",t.onload=function(){VK.Retargeting.Init("VK-RTRG-1002893-hs8Hj"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-1002893-hs8Hj" style="position:fixed; left:-999px;" alt=""/></noscript>
+<!-- Chatra {literal} -->
+<script>
+    (function(d, w, c) {
+        w.ChatraID = 'GitMQuh3kDahsGBKo';
+        var s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = 'https://call.chatra.io/chatra.js';
+        if (d.head) d.head.appendChild(s);
+    })(document, window, 'Chatra');
+</script>
+<!-- /Chatra {/literal} -->
+
+
+<!-- Mainly scripts -->
+<script src="js/libs/jquery/jquery-3.1.1.min.js"></script>
+<script src="js/libs/jquery/query-ui.js"></script>
+<script src="js/libs/history/history.min.js"></script>
+<script src="js/libs/popper/popper.min.js"></script>
+<script src="js/libs/bootstrap/bootstrap.js"></script>
+<script src="js/libs/metisMenu/jquery.metisMenu.js"></script>
+<script src="js/libs/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="js/libs/autocomplete/jquery.autocomplete.min_id_1.js"></script>
+<script src="js/libs/sparkline/jquery.sparkline.min.js"></script>
+<script src="js/libs/pagination/jquery.twbsPagination.min.js"></script>
+<script src="js/libs/toastr/toastr.min.js"></script>
+<script src="js/libs/flot/jquery.flot.js"></script>
+<script src="js/libs/flot/jquery.flot.tooltip.min.js"></script>
+<script src="js/libs/flot/jquery.flot.pie.js"></script>
+<script src="js/inspinia.js"></script>
+<script src="js/libs/pace/pace.min.js"></script>
+<script src="js/libs/charts/Chart.min.js"></script>
+<script src="js/libs/charts/chart2.js"></script>
+<script src="js/libs/select2/select2.full.min.js"></script>
+<script src="js/libs/intro/intro.min.js"></script>
+<script src="js/libs/daterangepicker/moment.min.js"></script>
+<script src="js/libs/daterangepicker/daterangepicker.js"></script>
+<script src="js/libs/iCheck/icheck.min.js"></script>
+<script async src="https://cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs-pro@3/dist/fp.min.js"></script>
+
+<script src="iframe_api/index.html"></script>
+
+<script src="static/onlineScript.js"></script>
+
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs@2/dist/fingerprint2.min.js"></script>
+-->
+
+<script src="https://cdn.jsdelivr.net/npm/bowser@2.5.3/es5.min.js"></script>
+
+<script src="js/libs/apexcharts/apexcharts.min.js"></script>
+<!--
+
+-->
+<!-- Custom and plugin javascript -->
+
+
+<script src="js/common_id_31.js"></script>
+<script src="client/js/helpers/positions_id_22.js"></script>
+<script src="client/js/SearchController_id_26.js"></script>
+<script src="client/js/CommonController_id_55.js"></script>
+<script src="client/js/RouterController_id_7.js"></script>
+<script src="client/js/PermissionController_id_23.js"></script>
+<script src="client/js/HintsController_id_45.js"></script>
+<script src="client/js/ChartsController_id_12.js"></script>
+<script src="client/js/ProductTableController_id_5.js"></script>
+<script src="client/js/AnalyticsController_id_5.js"></script>
+<script src="client/js/MyListController_id_8.js"></script>
+<script src="client/js/VideoController_id_36.js"></script>
+<script src="client/js/CustomVideoController_id_7.js"></script>
+
+
+<!-- Helpers -->
+
+<script src="client/js/helpers/serializer_id_5.js"></script>
+<script src="client/js/helpers/pagination_id_3.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(69943126, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+    });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/69943126" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163314472-10"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-163314472-10');
+    gtag('config', 'G-RVC65QY67H');
+</script>
+
+<script type="text/javascript">
+    var __cs = __cs || [];
+    __cs.push(["setCsAccount", "wV3LKYTSgMiPlA0BgO72uGWC8Ti076gu"]);
+</script>
+<script type="text/javascript" async src="https://app.comagic.ru/static/cs.min.js"></script>
+
+<script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?169",t.onload=function(){VK.Retargeting.Init("VK-RTRG-977719-7Ssal"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-977719-7Ssal" style="position:fixed; left:-999px;" alt=""/></noscript>
+<!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '245291500264702');
+    fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+               src="https://www.facebook.com/tr?id=245291500264702&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Rating Mail.ru counter -->
+<script type="text/javascript">
+    var _tmr = window._tmr || (window._tmr = []);
+    _tmr.push({id: "3222448", type: "pageView", start: (new Date()).getTime()});
+    (function (d, w, id) {
+        if (d.getElementById(id)) return;
+        var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+        ts.src = "https://top-fwz1.mail.ru/js/code.js";
+        var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+        if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+    })(document, window, "topmailru-code");
+</script><noscript><div>
+    <img src="https://top-fwz1.mail.ru/counter?id=3222448;js=na" style="border:0;position:absolute;left:-9999px;" alt="Top.Mail.Ru" />
+</div></noscript>
+<!-- //Rating Mail.ru counter -->
+
+<!-- Start of Omnidesk Widget script {literal}-->
+<script>
+    !function(e,o){!window.omni?window.omni=[]:'';window.omni.push(o);o.g_config={widget_id:"13861-549zrm2c"}; o.email_widget=o.email_widget||{};var w=o.email_widget;w.readyQueue=[];o.config=function(e){ this.g_config.user=e};w.ready=function(e){this.readyQueue.push(e)};var r=e.getElementsByTagName("script")[0];c=e.createElement("script");c.type="text/javascript",c.async=!0;c.src="https://omnidesk.ru/bundles/acmesite/js/cwidget0.2.min.js";r.parentNode.insertBefore(c,r)}(document,[]);
+</script>
+<!-- End of Omnidesk Widget script {/literal}-->
+
+</body>
+
+</html>
